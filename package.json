@@ -1,0 +1,23 @@
+{
+  "name": "teste-estagio-back-end-naveteam",
+  "version": "0.0.1",
+  "description": "A Node API made for Nave Team internship test.",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.95.1",
+    "objection": "^2.2.14",
+    "pg": "^8.5.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.8",
+    "@babel/node": "^7.13.0",
+    "@babel/preset-env": "^7.13.9",
+    "nodemon": "^2.0.7"
+  }
+}
