@@ -5,13 +5,20 @@
   "main": "server.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon --exec babel-node src/server.js"
+    "dev": "nodemon --exec babel-node src/server.js",
+    "build": "rm -rf build && mkdir build && babel src -s -d build",
+    "knex": "babel-node node_modules/.bin/knex --knexfile knexfile.js",
+    "db:migrate": "yarn knex migrate:latest",
+    "db:seed": "yarn knex seed:run"
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "knex": "^0.95.1",
     "objection": "^2.2.14",
-    "pg": "^8.5.1"
+    "pg": "^8.5.1",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.0",
