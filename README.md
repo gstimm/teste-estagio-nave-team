@@ -2,6 +2,10 @@
 
 Uma API RESTful feita com Node.js, PostgreSQL, Express, Knex e Objection.
 
+### Exercícios Code Sandbox JS
+
+[Exercícios-JS-Code-Sandbox-Gabriel-Timm](https://codesandbox.io/s/teste-estagio-template-forked-t7ms2?file=/index.html)
+
 ## Como rodar a API
 
 1. Instale o [Node.JS](https://nodejs.org/en/) na versão LTS;
