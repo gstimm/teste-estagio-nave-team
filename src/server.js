@@ -1,9 +1,27 @@
 import express from 'express';
-import routes from './routes/routes';
+import cors from 'cors';
+import { errors } from 'celebrate';
 
-const app = express();
+import NaversRouter from './routes/navers.routes';
+import ProjectsRouter from './routes/projects.routes';
 
-app.use(express.json());
-app.use('/', routes);
+class App {
+  constructor() {
+    this.app = express();
+    this.middlewares();
+    this.routes();
+  };
 
-app.listen(3333, () => console.log('Server started!'));
+  middlewares() {
+    this.app.use(cors());
+    this.app.use(express.json());
+    this.app.use(errors());
+  };
+
+  routes() {
+    this.app.use('/navers', NaversRouter);
+    this.app.use('/projects', ProjectsRouter);
+  };
+};
+
+export default new App().app;
