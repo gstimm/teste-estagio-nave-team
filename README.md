@@ -21,13 +21,13 @@ o retorno será a ID do container caso o comando tenha sucesso;
 6. Com o container criado, o proximo passo é acessar o banco de dados através de um software de sua escolha, recomendo o [Postbird](https://www.electronjs.org/apps/postbird), e criar uma database e guarde o nome pois ele será utilizado no `.env` junto com os dados `user_name` e `your_password`;
 7. Clone o repositório e altere o nome do arquivo `.env.example` para `.env` na raiz do projeto;
 8. No arquivo `.env`, complete a DATABASE_URL com postgress://`user_name`:`your_password`@localhost:5432/`database` e a PORT com `3333`;
-9. Instale as dependências utilizando o comando: `yarn`;
+9. Na pasta do projeto, instale as dependências utilizando o comando: `yarn`;
 10. Vamos rodar as migrações para deixar seu banco de dados no formato correto, digite no console:
  `yarn knex migrate:latest` e todas as migrações devem ser rodadas e está tudo pronto para os testes.
 11. Inicie a API digitando no console: `yarn dev`;
-12. Utilize o [Insomnia](https://insomnia.rest/download) para testar a aplicação;
+12. Utilize o [Insomnia](https://insomnia.rest/download) para testar a aplicação.
 
-## Insomnia
+## Template do Insomnia
 
 [![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Navers%20API&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fgstimm%2Fteste-estagio-nave-team%2Fmaster%2FInsomnia.json)
 
@@ -60,7 +60,7 @@ o retorno será a ID do container caso o comando tenha sucesso;
 
 ## Dificuldades Encontradas
 
-Para a construção da API, a minha dificuldade foi a criação do banco de dados utilizando as models do Objection, pois apesar de estar acostumado com o Knex, nunca havia utilizado O Objection para abstrair a camada de dados. Todavia, devido a excelente documentação oficial da biblioteca, tudo foi resolvido.
+Para a construção da API, a minha dificuldade foi a criação do banco de dados utilizando as models do Objection, pois apesar de estar acostumado com o Knex, nunca havia utilizado o Objection para abstrair a camada de dados. Todavia, devido a excelente documentação oficial da biblioteca, tudo foi resolvido.
 
 Nos exercícios de Banco de Dados, especialmente o E.B.4 e o E.B.5 foram um pouco difíceis de implementar devido a falta de prática com SQL Puro, mas nada que algum tempo tentando não resolvesse.
 
