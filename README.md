@@ -13,7 +13,7 @@ Uma API RESTful feita com Node.js, PostgreSQL, Express, Knex e Objection.
 3. Instale o PostgresSQL através do docker. Tutorial em anexo na imagem;
 
   [![Docker](https://www.ortussolutions.com/__media/logos/docker.png)](https://www.notion.so/Instala-o-do-Docker-629bb75aa46f427589883f6bcbc82af7)
-  
+
 4. Com o docker instalado será necessário criar um container, para isso devemos digitar no terminal:
 `docker run --name user_name -e POSTGRES_PASSWORD=your_password -p 5432:5432 -d postgres`
 o retorno será a ID do container caso o comando tenha sucesso;
@@ -65,6 +65,10 @@ Para a construção da API, a minha dificuldade foi a criação do banco de dado
 ## Exercícios de Banco de Dados
 
 Para a resolução desses exercícios foi utilizado o PostgreSQL.
+
+Diagrama ER do Bando de Dados.
+
+![banco](https://nave-challenges.s3.amazonaws.com/Back-End-Interniship/database-er.png)
 
 ### Passo a Passo para Executar os scripts.sql
 
