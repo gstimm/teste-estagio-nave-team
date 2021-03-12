@@ -2,7 +2,7 @@
 
 Uma API RESTful feita com Node.js, PostgreSQL, Express, Knex e Objection.
 
-### Exercícios Code Sandbox JS
+## Exercícios Code Sandbox JS
 
 [Exercícios-JS-Code-Sandbox-Gabriel-Timm](https://codesandbox.io/s/teste-estagio-template-forked-t7ms2?file=/index.html)
 
@@ -62,6 +62,8 @@ o retorno será a ID do container caso o comando tenha sucesso;
 
 Para a construção da API, a minha dificuldade foi a criação do banco de dados utilizando as models do Objection, pois apesar de estar acostumado com o Knex, nunca havia utilizado O Objection para abstrair a camada de dados. Todavia, devido a excelente documentação oficial da biblioteca, tudo foi resolvido.
 
+Nos exercícios de Banco de Dados, especialmente o E.B.4 e o E.B.5 foram um pouco difíceis de implementar devido a falta de prática com SQL Puro, mas nada que algum tempo tentando não resolvesse.
+
 ## Exercícios de Banco de Dados
 
 Para a resolução desses exercícios foi utilizado o PostgreSQL.
@@ -76,5 +78,5 @@ Diagrama ER do Bando de Dados.
 `docker run --name user_name -e POSTGRES_PASSWORD=your_password -p 5432:5432 -d postgres`
 o retorno será a ID do container caso o comando tenha sucesso;
 2. Em seguida, será necessário iniciar o container com o comando: `docker start ID_do_container`;
-3. Com o container iniciado, basta navegar até a pasta dos exercícios e digitar o comando a seguir, alterando os valores solicitados para os dados do container criado, além de alterar qual script deseja rodar, inde de **E.B.1.sql** até **E.B.5.sql**.
+3. Com o container iniciado, basta navegar até a pasta dos exercícios e digitar o comando a seguir, alterando os valores solicitados para os dados do container criado, além de alterar qual script deseja rodar, indo de **E.B.1.sql** até **E.B.5.sql**.
 `psql "dbname='postgres' user='user_name' password='your_password' host='localhost' port='5432'" -f E.B.1.sql`
